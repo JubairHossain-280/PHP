@@ -92,7 +92,6 @@ form {
 input[type="date"]::-webkit-datetime-edit {
     color:#EAAAFF;
     padding: 0 10px;
-    opacity: 0;
 }
 .input-field label{
     position: absolute;
