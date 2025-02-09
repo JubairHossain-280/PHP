@@ -7,24 +7,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="container">
-    <div class="typewriter2">
-        <h1>Login</h1>
+    <div class="login-title">
+        <h1 class="typewriter">Login</h1>
     </div>
     <form action="" method="POST">
-        <input type="text" name="name" id="" placeholder="Username" required>
-        <input type="password" name="password" id="" placeholder="Password" required>
-        <button type="submit" name="login-btn">Login</button>
+        <div class="input-field">
+            <input type="text" name="name" id="name" autocomplete="off" required>
+            <label for="name">Username</label>
+        </div>
+        <div class="input-field">
+            <input type="password" name="password" id="password" required>
+            <button type="button" class="show-btn"><i class="fa-solid fa-eye-slash"></i></button>
+            <label for="password">Password</label>
+        </div>
+        <button class="submit-btn" type="submit" name="login-btn">Login</button>
         <div class="signup-link">Don't have an account?<a href="signup.php"> Create account</a></div>
     </form>
     </div>
     
+
+    <script src="script.js"></script>
 </body>
 </html>
 
